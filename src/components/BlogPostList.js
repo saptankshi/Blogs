@@ -18,7 +18,7 @@ const BlogPostList = ({ setPosts }) => {
       try {
         const params = {
           q: searchTerm || 'technology',
-          apiKey: "de43cd3305de4e4ebd98c18f02f11f0c",
+          apiKey: process.env.REACT_APP_NEWS_API_KEY,
           page: currentPage,
           pageSize: 20,
         };
