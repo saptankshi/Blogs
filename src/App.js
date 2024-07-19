@@ -8,7 +8,7 @@ const App = () => {
   const [posts, setPosts] = useState([]);
 
   return (
-    <Router>
+    <Router basename="/Blogs">
       <div className="App">
         <Routes>
           <Route
